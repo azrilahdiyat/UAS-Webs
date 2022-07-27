@@ -42,12 +42,12 @@
         <div class="container">
           <div class="topic"></div>
           <div class="content">
-            <input type="radio" name="slider" checked id="home" />
+            <input type="radio" name="slider" checked id="flights" />
             <input type="radio" name="slider" id="hotels" />
             <input type="radio" name="slider" id="eats" />
             <input type="radio" name="slider" id="trains" />
             <div class="list">
-              <label for="home" class="home">
+              <label for="flights" class="flights">
                 <i class="fas fa-plane"></i>
                 <span class="title">Flights</span>
               </label>
@@ -67,6 +67,7 @@
             </div>
             <div class="text-content">
               <div class="home text">
+                <div class="title" id="flights">Flights</div>
                 <form class="row g-3 needs-validation" novalidate>
                   <div class="col-md-4">
                     <label for="validationfrom" class="form-label">From</label>
@@ -97,18 +98,41 @@
                     </select>
                     <div class="invalid-feedback">Example invalid select feedback</div>
                   </div>
+                  <div class="col-md-4">
+                    <label for="validationseat" class="form-label">Book Flights</label>
+                    <a href="pages/popupregister.html" style="text-decoration:none"><input type="submit" value="Book Flights"></a>
+                  </div>
                 </form>
               </div>
               <div class="hotels text">
                 <div class="title" id="hotel">Hotels</div>
                 <form class="row g-3 needs-validation" novalidate>
                   <div class="col-md-4">
-                    <label for="validationfrom" class="form-label">Booking ID</label>
+                    <label for="validationfrom" class="form-label">Hotel Name</label>
                     <input type="text" class="form-control" required />
                   </div>
                   <div class="col-md-4">
-                    <label for="validationto" class="form-label">Check In Date</label>
+                    <label for="validationfrom" class="form-label">City</label>
+                    <input type="text" class="form-control" required />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustomNo" class="form-label">Guests</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="no-guest"></span>
+                      <input type="text" class="form-control" required />
+                    </div>
+                  </div>  
+                  <div class="col-md-4">
+                    <label for="validationto" class="form-label">Check In</label>
                     <input type="date" class="form-control" id="validationCustomPassengers3" required />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationfrom" class="form-label">Duration</label>
+                    <input type="text" class="form-control" required />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationseat" class="form-label">Book Hotels</label>
+                    <a href="pages/popupregister.html" style="text-decoration:none"><input type="submit" value="Book Hotels"></a>
                   </div>
                 </form>
               </div>
@@ -123,6 +147,16 @@
                     <label for="validationfrom" class="form-label">Mall, area, region or city</label>
                     <input type="text" class="form-control" required />
                     <div class="invalid-feedback">Example invalid select feedback</div>
+                  </div>
+                  <div class="col-md-4">
+                  </div>
+                  <div class="col-md-4">
+                  </div>
+                  <div class="col-md-4">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationseat" class="form-label">Book Eats</label>
+                    <a href="pages/popupregister.html" style="text-decoration:none"><input type="submit" value="Book Eats"></a>
                   </div>
                 </form>
               </div>
@@ -140,6 +174,19 @@
                   <div class="col-md-4">
                     <label for="validationdepature" class="form-label">Departure Date</label>
                     <input type="date" class="form-control" id="validationCustomPassengers3" required />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustomNo" class="form-label">No Of Passangers</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="no-guest"></span>
+                      <input type="text" class="form-control" required />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationseat" class="form-label">Book Trains</label>
+                    <a href="pages/popupregister.html" style="text-decoration:none"><input type="submit" value="Book Trains"></a>
                   </div>
                 </form>
               </div>
